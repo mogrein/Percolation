@@ -19,7 +19,7 @@ public class Percolation {
 
     public void open(int i, int j) throws IndexOutOfBoundsException {        // open site (row i, column j) if it is not already
         if (i < 1 || i > gridSize || j < 1 || j > gridSize) {
-            throw new IndexOutOfBoundsException("get");
+            throw new IndexOutOfBoundsException("No element in the grid");
         }
         int elemNum = i * gridSize + j;
         if (!grid[elemNum - gridSize - 1]) {
@@ -41,14 +41,14 @@ public class Percolation {
 
     public boolean isOpen(int i, int j) {   // is site (row i, column j) open?
         if (i < 1 || i > gridSize || j < 1 || j > gridSize) {
-            throw new IndexOutOfBoundsException("get");
+            throw new IndexOutOfBoundsException("No element in the grid");
         }
         return grid[(i - 1) * gridSize + j - 1];
     }
 
     public boolean isFull(int i, int j) {   // is site (row i, column j) full?
         if (i < 1 || i > gridSize || j < 1 || j > gridSize) {
-            throw new IndexOutOfBoundsException("get");
+            throw new IndexOutOfBoundsException("No element in the grid");
         }
         return gridGraph.connected(0, i * gridSize + j);
     }
