@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$USER_HOME$/Coursera/algs4" />
+        </CLASSES>
+        <JAVADOC>
+          <root url="file://$USER_HOME$/Coursera/algs4/checkstyle-5.5/site/apidocs" />
+        </JAVADOC>
+        <SOURCES>
+          <root url="file://$USER_HOME$/Coursera/algs4/checkstyle-5.5/contrib/bcel/src/tests" />
+          <root url="file://$USER_HOME$/Coursera/algs4/checkstyle-5.5/contrib/bcel/src/checkstyle" />
+          <root url="file://$USER_HOME$/Coursera/algs4/checkstyle-5.5/contrib/bcel/src/testinputs" />
+          <root url="file://$USER_HOME$/Coursera/algs4/checkstyle-5.5/contrib/usage/src/tests" />
+          <root url="file://$USER_HOME$/Coursera/algs4/checkstyle-5.5/contrib/usage/src/checkstyle" />
+          <root url="file://$USER_HOME$/Coursera/algs4/checkstyle-5.5/contrib/usage/src/testinputs" />
+          <root url="file://$USER_HOME$/Coursera/algs4/checkstyle-5.5/contrib/examples/checks" />
+          <root url="file://$USER_HOME$/Coursera/algs4/checkstyle-5.5/contrib/examples/filters" />
+          <root url="file://$USER_HOME$/Coursera/algs4/checkstyle-5.5/contrib/examples/listeners" />
+          <root url="file://$USER_HOME$/Coursera/algs4/checkstyle-5.5/contrib" />
+          <root url="file://$USER_HOME$/Coursera/algs4" />
+        </SOURCES>
+        <jarDirectory url="file://$USER_HOME$/Coursera/algs4" recursive="false" />
+        <jarDirectory url="file://$USER_HOME$/Coursera/algs4" recursive="false" type="SOURCES" />
+      </library>
+    </orderEntry>
+  </component>
+</module>
+
