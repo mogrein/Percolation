@@ -13,7 +13,7 @@ public class PercolationStats {
     public PercolationStats(int N, int T) {
         if (N <= 0 || T <= 0) {
             throw new IllegalArgumentException("Number of experiments"
-                   + "and grid Size must be positive numbers.");
+                   + " and grid Size must be positive numbers.");
         }
         experimentResult = new double[T];
         int experimentSize = N * N;

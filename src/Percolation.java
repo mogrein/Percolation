@@ -10,7 +10,7 @@ public class Percolation {
     // create gridSize-by-gridSize grid, with all sites blocked
     public Percolation(int N) {
         if (N <= 0) {
-            throw new IndexOutOfBoundsException("Argument must be positive");
+            throw new IllegalArgumentException("Argument must be positive");
         }
         gridSize = N;
         grid = new boolean[N * N];
@@ -60,11 +60,30 @@ public class Percolation {
         if (i < 1 || i > gridSize || j < 1 || j > gridSize) {
             throw new IndexOutOfBoundsException("No element in the grid");
         }
-        return gridGraph.connected(0, (i - 1) * gridSize + j);
+        return grid[(i - 1) * gridSize + j - 1]
+                && gridGraph.connected(0, (i - 1) * gridSize + j);
     }
 
     // does the system percolate?
     public boolean percolates() {
         return gridGraph.connected(0, grid.length + 1);
+    }
+
+    private void printGrid() {
+        for (int i = 0; i < gridSize; ++i) {
+            int tmp = i * gridSize;
+            char c;
+            for (int j = 0; j < gridSize; ++j) {
+                c = grid[tmp + j]? '0' : ' ';
+                System.out.print(c);
+            }
+            System.out.print(" | ");
+            for (int j = 0; j < gridSize; ++j) {
+                c = isFull(i + 1, j + 1)? '0' : ' ';
+                System.out.print(c);
+            }
+            System.out.println();
+        }
+
     }
 }
