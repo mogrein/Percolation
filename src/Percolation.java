@@ -60,7 +60,7 @@ public class Percolation {
         if (i < 1 || i > gridSize || j < 1 || j > gridSize) {
             throw new IndexOutOfBoundsException("No element in the grid");
         }
-        return gridGraph.connected(0, i * gridSize + j);
+        return gridGraph.connected(0, (i - 1) * gridSize + j);
     }
 
     // does the system percolate?
